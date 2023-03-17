@@ -12,35 +12,51 @@ public class Employee {
     private String occupation;
     private String department;
     private double salary;
+
+    // default constructor method
+    public Employee() {
+
+    }
+
+    // get assigned ID
+    public int getID() {
+
+    }
+
+    // get first name
+
+
+    // set first name
     
-    // getID
+
+    // get last name
 
 
-    // getFirstName
+    // set last name
 
 
-    // setFirstName
-    
-
-    // getLastName
+    // get full name
 
 
-    // setLastName
+    // get age
 
 
-    // getFullName
+    // get occupation
 
 
-    // getAge
+    // set occupation
 
 
-    // getOccupation
+    // get department
 
 
-    // getDepartment
+    // set department
 
-    
-    // getSalary
+
+    // get salary
+
+
+    // set salary
 
 
 
