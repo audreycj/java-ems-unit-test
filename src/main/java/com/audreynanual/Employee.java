@@ -81,7 +81,7 @@ public class Employee {
 
     // get department
     public String getDepartment() {
-        return occupation;
+        return department;
     }
 
     // set department
