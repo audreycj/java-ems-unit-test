@@ -1,2 +1,2 @@
-# employee-management-system
+# Java-Based Employee Management System (no GUI)
  
