@@ -14,12 +14,20 @@ public class Employee {
     private double salary;
 
     // default constructor method
-    public Employee(int id, String firstName, String lastName) {
+    public Employee() {
 
     }
 
     // parameterized constructor method
-
+    public Employee(int id, String firstName, String lastName, int age, String occupation, String department, double salary) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.occupation = occupation;
+        this.department = department;
+        this.salary = salary;
+    }
 
     // get assigned ID
     public int getID() {
