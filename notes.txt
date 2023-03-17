@@ -4,4 +4,8 @@ Functions:
     3. Update Employee
     4. Delete Employee
     5. View All Employees
-    ●
+
+I can use these:
+    ● @Data
+    ● @AllArgsConstructor
+    ● @NoArgsConstructor
