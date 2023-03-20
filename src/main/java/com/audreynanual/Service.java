@@ -17,6 +17,9 @@ public class Service {
     // user input
     Scanner userInput = new Scanner(System.in);
     
+    // found variable in all methods
+    boolean found = false;
+
     // This HashSet object will contain/store all employee details (since this system does not have a database)
     HashSet<Employee> employeeSet = new HashSet<Employee>();
 
@@ -41,7 +44,7 @@ public class Service {
 
     // Service 2: View an employee based on their ID
     public void viewEmployeeByID() {
-        boolean found = false;
+
         System.out.print("\nEnter employee ID: ");
         id = userInput.nextInt(); 
         System.out.println("");
@@ -61,42 +64,63 @@ public class Service {
 
     // Service 3: Update employee information
     public void updateEmployee() {
-        System.out.println("Enter employee ID: ");
+
+        System.out.print("Enter employee ID: ");
         id = userInput.nextInt();
+
         for (Employee employee:employeeSet) {
+            
             if(employee.getID() == id) {
                 // update first name
-                System.out.println("Enter new first name: ");
+                System.out.print("Enter new first name: ");
                 firstName = userInput.next();    
-                employee.setFirstName(firstName);            
+                employee.setFirstName(firstName);  
+
                 // update last name
-                System.out.println("Enter new last name: ");
+                System.out.print("Enter new last name: ");
                 lastName = userInput.next();
                 employee.setLastName(lastName);
+
                 // update age
-                System.out.println("Enter new age: ");
+                System.out.print("Enter new age: ");
                 age = userInput.nextInt();
                 employee.setAge(age);
+
                 // update department
-                System.out.println("Enter new department: ");
+                System.out.print("Enter new department: ");
                 department = userInput.next();
                 employee.setDepartment(department);
+
                 // update occupation
-                System.out.println("Enter new occupation: ");
+                System.out.print("Enter new occupation: ");
                 occupation = userInput.next();
                 employee.setOccupation(occupation);
+
                 // update salary
-                System.out.println("Enter new salary: ");
+                System.out.print("Enter new salary: ");
                 salary = userInput.nextDouble();
                 employee.setSalary(salary);
-            }
+
+                // display updated details
+                System.out.print("Updated employee details: ");
+                System.out.println(employee);
+
+                found = true;
+                break;
+            }}
+
+        if(!found) {
+            System.out.println("There is no employee with this ID.\n");
+        } else {
+            System.out.println("Employee details updated successfully.\n");
         }
     }
 
     // Service 5: View all employees
     public void viewAllEmployees() {
+
         for(Employee employee:employeeSet) {
             System.out.println(employee);
-        }        
+        }
     }
 }
