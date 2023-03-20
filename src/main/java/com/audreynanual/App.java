@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class App {
 
-    // Service object
-    Service service = new Service();
-
     // Activated state of the system's "ordering" mode (user will choose a service in the menu)
     static boolean ordering = true;
 
@@ -29,9 +26,12 @@ public class App {
         // user input
         Scanner userInput = new Scanner(System.in);
 
+        // Service object
+        Service service = new Service();
+
         do {
             displayMenu();
-            Service service = new Service();
+            // Service service = new Service();
             
             System.out.print("\nWhat do you want to do? ");
             int choice = userInput.nextInt(); // reads value from userInput and stores it in choice
@@ -55,7 +55,7 @@ public class App {
                     break;
                 case 5: // View all employees
                     System.out.println("");
-                    // service.viewAllEmployees();
+                    service.viewAllEmployees();
                     break;
                 case 6: // Exit application
                     System.out.println("");
