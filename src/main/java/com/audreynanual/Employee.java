@@ -9,8 +9,8 @@ public class Employee {
     private String firstName;
     private String lastName;
     private int age;
-    private String occupation;
     private String department;
+    private String occupation;
     private double salary;
 
     // default constructor method
@@ -19,14 +19,14 @@ public class Employee {
     }
 
     // parameterized constructor method
-    public Employee(int id, String firstName, String lastName, int age, String occupation, String department, double salary) {
+    public Employee(int id, String firstName, String lastName, int age, String department, String occupation, double salary) {
         super(); // do i need this?
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
-        this.occupation = occupation;
         this.department = department;
+        this.occupation = occupation;
         this.salary = salary;
     }
 
@@ -70,16 +70,6 @@ public class Employee {
         this.age = age;
     }
 
-    // get occupation
-    public String getOccupation() {
-        return occupation;
-    }
-
-    // set occupation
-    public void setOccupation(String occupation) {
-        this.occupation = occupation;
-    }
-
     // get department
     public String getDepartment() {
         return department;
@@ -88,6 +78,16 @@ public class Employee {
     // set department
     public void setDepartment(String department) {
         this.department = department;
+    }
+
+    // get occupation
+    public String getOccupation() {
+        return occupation;
+    }
+
+    // set occupation
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
     }
 
     // get salary
@@ -107,8 +107,8 @@ public class Employee {
         "Employee [id: " + id +
         ", name: " + firstName + " " + lastName +
         ", age: " + age +
-        ", occupation: " + occupation +
         ", department: " + department +
+        ", occupation: " + occupation +
         ", salary: " + salary + "]";
     }  
 
