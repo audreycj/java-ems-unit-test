@@ -28,6 +28,7 @@ public class App {
 
         do {
             displayMenu();
+            Service service = new Service();
             
             System.out.print("\nWhat do you want to do? ");
             int choice = userInput.nextInt(); // reads value from userInput and stores it in choice
@@ -47,6 +48,7 @@ public class App {
                     break;
                 case 5:
                     System.out.println("\nView All Employees");
+                    service.viewAllEmployees();
                     break;
                 case 6:
                     System.out.println("\nThank you for using the application. See you next time!");
