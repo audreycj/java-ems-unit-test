@@ -3,6 +3,7 @@ package com.audreynanual;
 
 // import java.util.HashSet;
 import java.util.HashMap;
+import java.util.Map.Entry;
 import java.util.Scanner;
 
 public class Service {
@@ -125,10 +126,17 @@ public class Service {
     }
 
     // 5: View all employees
-    // public void viewAllEmployees() {
+    public void viewAllEmployees() {
 
-    //     for (Employee employee : employeeSet) {
-    //         System.out.println(employee);
-    //     }
-    // }
+        // iterating through key/value mappings
+        // for (Entry<Integer, Employee> entry: employeeSet.values()) {
+        //     System.out.println(entry);
+        //     System.out.println("");
+        // }
+
+        for (Employee value: employeeSet.values()) {
+            System.out.println(value);
+            System.out.println("");
+        }
+    }
 }
