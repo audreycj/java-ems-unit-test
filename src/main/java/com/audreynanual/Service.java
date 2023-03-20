@@ -16,7 +16,7 @@ public class Service {
     Employee employee5 = new Employee(0005, "Thomas", "Clark", 25, "Legal", "Compliance Officer", 37000);
     Employee employee6 = new Employee(0006, "Hannah", "Miller", 32, "Accounting and Finance", "Accountant", 33000);
 
-    
+
     Scanner sc = new Scanner(System.in);
 
     // instance variables
@@ -39,4 +39,11 @@ public class Service {
         employeeSet.add(employee6);
     }
 
+    // View all employees
+    public void viewAllEmployees() {
+        // Display all employees and their corresponding information from the employeeSet HashSet 
+        for(Employee employee:employeeSet) {
+            System.out.println(employee);
+        }
+    }
 }
