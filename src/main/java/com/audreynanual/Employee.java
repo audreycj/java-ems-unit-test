@@ -5,7 +5,7 @@ package com.audreynanual;
 public class Employee {
     
     // instance variables
-    private int id;
+    private String id;
     private String firstName;
     private String lastName;
     private int age;
@@ -19,7 +19,7 @@ public class Employee {
     }
 
     // parameterized constructor method
-    public Employee(int id, String firstName, String lastName, int age, String department, String occupation, double salary) {
+    public Employee(String id, String firstName, String lastName, int age, String department, String occupation, double salary) {
         super(); // do i need this?
         this.id = id;
         this.firstName = firstName;
@@ -31,7 +31,7 @@ public class Employee {
     }
 
     // get assigned ID
-    public int getID() {
+    public String getID() {
         return id;
     }
 
@@ -104,12 +104,12 @@ public class Employee {
     @Override
     public String toString() {
         return
-        "Employee [id: " + id +
-        ", name: " + firstName + " " + lastName +
-        ", age: " + age +
-        ", department: " + department +
-        ", occupation: " + occupation +
-        ", salary: " + salary + "]";
+        "ID: " + id +
+        "\nName: " + firstName + " " + lastName +
+        "\nAge: " + age +
+        "\nDepartment: " + department +
+        "\nOccupation: " + occupation +
+        "\nSalary: " + salary + "\n";
     }  
 
     
