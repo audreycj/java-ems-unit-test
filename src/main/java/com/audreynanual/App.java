@@ -43,7 +43,7 @@ public class App {
                     service.viewEmployeeByID();
                     break;
                 case 3:
-                    System.out.println("\nUpdate Employee");
+                    service.updateEmployee();
                     break;
                 case 4:
                     System.out.println("\nDelete Employee");
