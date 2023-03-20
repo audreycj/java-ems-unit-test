@@ -20,6 +20,7 @@ public class Employee {
 
     // parameterized constructor method
     public Employee(int id, String firstName, String lastName, int age, String occupation, String department, double salary) {
+        super(); // do i need this?
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -99,5 +100,17 @@ public class Employee {
         this.salary = salary;
     }
 
+    // Override toString() method to provide a more meaningful way of displaying information about the Employee object
+    @Override
+    public String toString() {
+        return
+        "Employee [id: " + id +
+        ", name: " + firstName + " " + lastName +
+        ", age: " + age +
+        ", occupation: " + occupation +
+        ", department: " + department +
+        ", salary: " + salary + "]";
+    }  
 
+    
 }
