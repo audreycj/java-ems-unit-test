@@ -67,10 +67,12 @@ public class Service {
 
         System.out.print("Enter employee ID: ");
         id = userInput.nextInt();
+        found = false;
 
         for (Employee employee:employeeSet) {
-            
+
             if(employee.getID() == id) {
+                
                 // update first name
                 System.out.print("Enter new first name: ");
                 firstName = userInput.next();    
