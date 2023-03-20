@@ -48,3 +48,6 @@ replay_pid*
 
 # directories
 target
+
+# notes
+*.txt
