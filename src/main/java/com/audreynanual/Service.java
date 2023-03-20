@@ -42,14 +42,14 @@ public class Service {
         employeeSet.add(employee6);
     }
 
-    // Service 2: View an employee based on their ID
+    // 2: View an employee based on their ID
     public void viewEmployeeByID() {
 
-        System.out.print("\nEnter employee ID: ");
+        System.out.print("Enter employee ID: ");
         id = userInput.nextInt(); 
         System.out.println("");
 
-        for (Employee employee:employeeSet) {
+        for(Employee employee:employeeSet) {
             if(employee.getID() == id) {
                 System.out.println(employee);
                 found = true;
@@ -62,17 +62,17 @@ public class Service {
         }
     }
 
-    // Service 3: Update employee information
+    // 3: Update employee information
     public void updateEmployee() {
 
         System.out.print("Enter employee ID: ");
         id = userInput.nextInt();
         found = false;
 
-        for (Employee employee:employeeSet) {
+        for(Employee employee:employeeSet) {
 
             if(employee.getID() == id) {
-                
+
                 // update first name
                 System.out.print("Enter new first name: ");
                 firstName = userInput.next();    
@@ -118,11 +118,34 @@ public class Service {
         }
     }
 
-    // Service 5: View all employees
+    // 4. Delete an employee record
+    public void deleteEmployee() {
+
+        System.out.print("Enter employee ID: ");
+        id = userInput.nextInt();
+        Employee employeeDelete = null;
+        found = false;
+
+        for(Employee employee:employeeSet) {
+            if(employee.getID() == id) {
+                employeeDelete = employee;
+                found = true;
+                break;
+            }}
+        if(!found) {
+            System.out.println("\nThere is no employee with this ID.\n");
+        } else {
+            employeeSet.remove(employeeDelete);
+            System.out.println("\nEmployee deleted successfully.\n");
+        }
+    }
+
+    // 5: View all employees
     public void viewAllEmployees() {
 
         for(Employee employee:employeeSet) {
             System.out.println(employee);
+            id = userInput.nextInt();
         }
     }
 }
