@@ -5,7 +5,7 @@ package com.audreynanual;
 public class Employee {
     
     // instance variables
-    private String id;
+    private int id;
     private String firstName;
     private String lastName;
     private int age;
@@ -19,7 +19,7 @@ public class Employee {
     }
 
     // parameterized constructor method
-    public Employee(String id, String firstName, String lastName, int age, String department, String occupation, double salary) {
+    public Employee(int id, String firstName, String lastName, int age, String department, String occupation, double salary) {
         super(); // do i need this?
         this.id = id;
         this.firstName = firstName;
@@ -31,7 +31,7 @@ public class Employee {
     }
 
     // get assigned ID
-    public String getID() {
+    public int getID() {
         return id;
     }
 
