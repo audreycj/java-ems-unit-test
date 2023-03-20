@@ -8,3 +8,5 @@ public class App {
         // stuff
     }
 }
+
+// This App class contains the main method
