@@ -36,26 +36,33 @@ public class App {
             int choice = userInput.nextInt(); // reads value from userInput and stores it in choice
 
             switch(choice) {
-                case 1:
-                    System.out.println("Add Employee");
+                case 1: // Add employee
+                    System.out.println("");
+                    // System.out.println("Add Employee");
                     break;
-                case 2:
+                case 2: // View employee
+                    System.out.println("");
                     service.viewEmployeeByID();
                     break;
-                case 3:
+                case 3: // Update employee
+                    System.out.println("");
                     service.updateEmployee();
                     break;
-                case 4:
-                    System.out.println("\nDelete Employee");
+                case 4: // Delete employee
+                    System.out.println("");
+                    service.deleteEmployee();
                     break;
-                case 5:
+                case 5: // View all employees
+                    System.out.println("");
                     service.viewAllEmployees();
                     break;
-                case 6:
-                    System.out.println("\nThank you for using the application. See you next time!");
+                case 6: // Exit application
+                    System.out.println("");
+                    System.out.println("Thank you for using the application. See you next time!");
                     System.exit(0);
                 default:
                     System.out.println("\nPlease enter a valid service from the menu.");
+                    System.out.println("");
                     break;
             }
         } while (ordering);
