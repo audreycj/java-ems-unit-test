@@ -36,6 +36,29 @@ public class Service {
         employeeSet.put(employee3.getID(), employee3);
     }
 
+    // 1. Add new employee record
+    public void addEmployee() {
+        System.out.print("Enter ID: ");
+        id = userInput.nextInt();
+        System.out.print("Enter first name: ");
+        firstName = userInput.next();
+        System.out.print("Enter last name: ");
+        lastName = userInput.next();
+        System.out.print("Enter age: ");
+        age = userInput.nextInt();
+        System.out.print("Enter department: ");
+        department = userInput.next();
+        System.out.print("Enter occupation: ");
+        occupation = userInput.next();
+        System.out.print("Enter salary: ");
+        salary = userInput.nextDouble();
+
+        Employee newEmployee = new Employee(id, firstName, lastName, age, department, occupation, salary);
+        employeeSet.put(newEmployee.getID(), newEmployee);
+        System.out.println("Employee added successfully.");
+
+    }
+
     // 2: View an employee based on their ID
     public void viewEmployeeByID() {
 
