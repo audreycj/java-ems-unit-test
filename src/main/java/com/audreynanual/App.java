@@ -25,6 +25,7 @@ public class App {
 
     // main method
     public static void main(String[] args) {
+
         // user input
         Scanner userInput = new Scanner(System.in);
 
@@ -54,7 +55,7 @@ public class App {
                     break;
                 case 5: // View all employees
                     System.out.println("");
-                    service.viewAllEmployees();
+                    // service.viewAllEmployees();
                     break;
                 case 6: // Exit application
                     System.out.println("");

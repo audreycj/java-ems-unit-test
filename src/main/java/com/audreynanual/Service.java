@@ -1,6 +1,8 @@
 // The Service class contains the logic of each operation the system can do
 package com.audreynanual;
-import java.util.HashSet;
+
+// import java.util.HashSet;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Service {
@@ -16,12 +18,9 @@ public class Service {
 
     // user input
     Scanner userInput = new Scanner(System.in);
-    
-    // found variable in all methods
-    boolean found = false;
 
-    // This HashSet object will contain/store all employee details (since this system does not have a database)
-    HashSet<Employee> employeeSet = new HashSet<Employee>();
+    // This HashMap object will contain/store all employee details in key-value pairs
+    HashMap<Integer, Employee> employeeSet = new HashMap<>();
 
     // employee information
     Employee employee1 = new Employee(13001, "James", "Smith", 27, "Information Technology", "Developer", 30000);
@@ -30,29 +29,25 @@ public class Service {
 
     // constructor method
     public Service() {
-        // Add the sets of information in each Employee object to the employeeSet HashSet
-        employeeSet.add(employee1);
-        employeeSet.add(employee2);
-        employeeSet.add(employee3);
+        // Add the sets of information in each Employee object to the employeeSet HashMap
+        employeeSet.put(employee1.getID(), employee1);
+        employeeSet.put(employee2.getID(), employee2);
+        employeeSet.put(employee3.getID(), employee3);
     }
 
     // 2: View an employee based on their ID
     public void viewEmployeeByID() {
 
         System.out.print("Enter employee ID: ");
-        id = userInput.nextInt(); 
+        id = userInput.nextInt();
         System.out.println("");
 
-        for(Employee employee:employeeSet) {
-            if(employee.getID() == id) {
-                System.out.println(employee);
-                found = true;
-                break;
-            }}
+        Employee queriedEmployee = employeeSet.get(id);
 
-        if (!found) {
+        if (queriedEmployee == null) {
             System.out.println("There is no employee with this ID.\n");
-
+        } else {
+            System.out.println(queriedEmployee);
         }
     }
 
@@ -61,84 +56,79 @@ public class Service {
 
         System.out.print("Enter employee ID: ");
         id = userInput.nextInt();
-        found = false;
+        System.out.println("");
 
-        for(Employee employee:employeeSet) {
+        Employee queriedEmployee = employeeSet.get(id);
 
-            if(employee.getID() == id) {
-
-                // update first name
-                System.out.print("Enter new first name: ");
-                firstName = userInput.next();    
-                employee.setFirstName(firstName);  
-
-                // update last name
-                System.out.print("Enter new last name: ");
-                lastName = userInput.next();
-                employee.setLastName(lastName);
-
-                // update age
-                System.out.print("Enter new age: ");
-                age = userInput.nextInt();
-                employee.setAge(age);
-
-                // update department
-                System.out.print("Enter new department: ");
-                department = userInput.next();
-                employee.setDepartment(department);
-
-                // update occupation
-                System.out.print("Enter new occupation: ");
-                occupation = userInput.next();
-                employee.setOccupation(occupation);
-
-                // update salary
-                System.out.print("Enter new salary: ");
-                salary = userInput.nextDouble();
-                employee.setSalary(salary);
-
-                // display updated details
-                System.out.print("Updated employee details: ");
-                System.out.println(employee);
-
-                found = true;
-                break;
-            }}
-
-        if(!found) {
+        if (queriedEmployee == null) {
             System.out.println("There is no employee with this ID.\n");
-        } else {
-            System.out.println("Employee details updated successfully.\n");
+
+        } else {           
+            // update first name
+            System.out.print("Enter new first name: ");
+            firstName = userInput.next();    
+            queriedEmployee.setFirstName(firstName);  
+
+            // update last name
+            System.out.print("Enter new last name: ");
+            lastName = userInput.next();
+            queriedEmployee.setLastName(lastName);
+
+            // update age
+            System.out.print("Enter new age: ");
+            age = userInput.nextInt();
+            queriedEmployee.setAge(age);
+
+            // update department
+            System.out.print("Enter new department: ");
+            department = userInput.next();
+            queriedEmployee.setDepartment(department);
+
+            // update occupation
+            System.out.print("Enter new occupation: ");
+            occupation = userInput.next();
+            queriedEmployee.setOccupation(occupation);
+
+            // update salary
+            System.out.print("Enter new salary: ");
+            salary = userInput.nextDouble();
+            queriedEmployee.setSalary(salary);
+
+            // display updated details
+            System.out.print("Updated employee details: ");
+            System.out.println(queriedEmployee);
+            employeeSet.put(id, queriedEmployee);
+
+            // message
+            System.out.println("Employee information updated successfully.\n");
         }
     }
+
 
     // 4. Delete an employee record
     public void deleteEmployee() {
 
         System.out.print("Enter employee ID: ");
         id = userInput.nextInt();
-        Employee employeeDelete = null;
-        found = false;
+        System.out.println("");
 
-        for(Employee employee:employeeSet) {
-            if(employee.getID() == id) {
-                employeeDelete = employee;
-                found = true;
-                break;
-            }}
-        if(!found) {
-            System.out.println("\nThere is no employee with this ID.\n");
+        Employee queriedEmployee = employeeSet.get(id);
+
+        // if inputted ID is not in the HashMap, print out the following message
+        if (queriedEmployee == null) {
+            System.out.println("There is no employee with this ID.\n");
+
         } else {
-            employeeSet.remove(employeeDelete);
-            System.out.println("\nEmployee deleted successfully.\n");
+            System.out.println("Employee information deleted successfully.\n");
+            employeeSet.remove(queriedEmployee.getID());
         }
     }
 
     // 5: View all employees
-    public void viewAllEmployees() {
+    // public void viewAllEmployees() {
 
-        for(Employee employee:employeeSet) {
-            System.out.println(employee);
-        }
-    }
+    //     for (Employee employee : employeeSet) {
+    //         System.out.println(employee);
+    //     }
+    // }
 }
