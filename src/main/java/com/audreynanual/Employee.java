@@ -41,8 +41,8 @@ public class Employee {
     }
 
     // set first name
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstName(String newFirstName) {
+        this.firstName = newFirstName;
     }
 
     // get last name
@@ -51,8 +51,8 @@ public class Employee {
     }
 
     // set last name
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastName(String newLastName) {
+        this.lastName = newLastName;
     }
 
     // get full name
@@ -66,8 +66,8 @@ public class Employee {
     }
 
     // set age
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(int newAge) {
+        this.age = newAge;
     }
 
     // get department
@@ -76,8 +76,8 @@ public class Employee {
     }
 
     // set department
-    public void setDepartment(String department) {
-        this.department = department;
+    public void setDepartment(String newDepartment) {
+        this.department = newDepartment;
     }
 
     // get occupation
@@ -86,8 +86,8 @@ public class Employee {
     }
 
     // set occupation
-    public void setOccupation(String occupation) {
-        this.occupation = occupation;
+    public void setOccupation(String newOccupation) {
+        this.occupation = newOccupation;
     }
 
     // get salary
@@ -96,8 +96,8 @@ public class Employee {
     }
 
     // set salary
-    public void setSalary (double salary) {
-        this.salary = salary;
+    public void setSalary (double newSalary) {
+        this.salary = newSalary;
     }
 
     // Override toString() method to provide a more meaningful way of displaying information about the Employee object
