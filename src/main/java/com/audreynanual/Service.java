@@ -39,7 +39,7 @@ public class Service {
         employeeSet.add(employee6);
     }
 
-    // 2. View an employee based on their ID
+    // Service 2: View an employee based on their ID
     public void viewEmployeeByID() {
         boolean found = false;
         System.out.print("\nEnter employee ID: ");
@@ -57,12 +57,43 @@ public class Service {
             System.out.println("There is no employee with this ID.\n");
 
         }
-        // if(employeeSet.size() < userInput) {
-        //     System.out.println("\nThere is no employee with this ID.");
-        // }
     }
 
-    // 5. View all employees
+    // Service 3: Update employee information
+    public void updateEmployee() {
+        System.out.println("Enter employee ID: ");
+        id = userInput.nextInt();
+        for (Employee employee:employeeSet) {
+            if(employee.getID() == id) {
+                // update first name
+                System.out.println("Enter new first name: ");
+                firstName = userInput.next();    
+                employee.setFirstName(firstName);            
+                // update last name
+                System.out.println("Enter new last name: ");
+                lastName = userInput.next();
+                employee.setLastName(lastName);
+                // update age
+                System.out.println("Enter new age: ");
+                age = userInput.nextInt();
+                employee.setAge(age);
+                // update department
+                System.out.println("Enter new department: ");
+                department = userInput.next();
+                employee.setDepartment(department);
+                // update occupation
+                System.out.println("Enter new occupation: ");
+                occupation = userInput.next();
+                employee.setOccupation(occupation);
+                // update salary
+                System.out.println("Enter new salary: ");
+                salary = userInput.nextDouble();
+                employee.setSalary(salary);
+            }
+        }
+    }
+
+    // Service 5: View all employees
     public void viewAllEmployees() {
         for(Employee employee:employeeSet) {
             System.out.println(employee);
