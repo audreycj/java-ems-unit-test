@@ -7,7 +7,7 @@ The system is designed to be straightforward and easy-to-use, with minimal featu
 ## Features
 
 - Add an employee
-- View an employee's information
+- View an employee's information via entering their ID
 - Update an employee's information
 - Delete an employee
 - View all employees
