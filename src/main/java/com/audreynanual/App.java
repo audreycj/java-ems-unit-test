@@ -39,7 +39,7 @@ public class App {
             switch(choice) {
                 case 1: // Add employee
                     System.out.println("");
-                    // System.out.println("Add Employee");
+                    service.addEmployee();
                     break;
                 case 2: // View employee
                     System.out.println("");
