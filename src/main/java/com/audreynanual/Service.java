@@ -27,9 +27,6 @@ public class Service {
     Employee employee1 = new Employee(13001, "James", "Smith", 27, "Information Technology", "Developer", 30000);
     Employee employee2 = new Employee(13002, "Maria", "Rodriguez", 26, "Information Technology", "Tester", 28000);
     Employee employee3 = new Employee(13003, "David", "Brown", 30, "Administrative", "Receptionist", 25000);
-    // Employee employee4 = new Employee(13004, "Elizabeth", "Williams", 29, "Administrative", "Executive Assistant", 35000);
-    // Employee employee5 = new Employee(13005, "Thomas", "Clark", 25, "Legal", "Compliance Officer", 37000);
-    // Employee employee6 = new Employee(13006, "Hannah", "Miller", 32, "Accounting and Finance", "Accountant", 33000);
 
     // constructor method
     public Service() {
@@ -37,9 +34,6 @@ public class Service {
         employeeSet.add(employee1);
         employeeSet.add(employee2);
         employeeSet.add(employee3);
-        // employeeSet.add(employee4);
-        // employeeSet.add(employee5);
-        // employeeSet.add(employee6);
     }
 
     // 2: View an employee based on their ID
