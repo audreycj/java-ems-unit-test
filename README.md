@@ -49,11 +49,16 @@ To install and run the application, the following tools must be installed first:
 - [Java 17 or higher](https://www.oracle.com/java/technologies/downloads/)
 - Any integrated development environment (IDE) that can run Java, such as [Visual Studio Code](https://code.visualstudio.com/Download)
 
-If you want to use VS Code as your IDE, you can [install the Coding Pack for Java](https://code.visualstudio.com/docs/java/java-tutorial), which includes VS Code, the Java Development Kit (JDK), and essential Java extensions.## Acknowledgements
+If you want to use VS Code as your IDE, you can [install the Coding Pack for Java](https://code.visualstudio.com/docs/java/java-tutorial), which includes VS Code, the Java Development Kit (JDK), and essential Java extensions.
+
+
+## Acknowledgements
 
  - [Easily create a README.md for your projects using readme.so](https://readme.so/editor)
  - [Getting Started with Java in VS Code](https://code.visualstudio.com/docs/java/java-tutorial)
  - [Employee management application reference](https://github.com/sjprogramming/Employee-Management-Application)
+ 
+ 
 ## Author
 
 - [@audreycj](https://github.com/audreycj)
