@@ -10,21 +10,6 @@ The system is designed to be straightforward and easy-to-use, with minimal featu
 - Update an employee's information
 - Delete an employee
 - View all employees
-## Screenshots
-
-![Menu](https://malayancollegesmindanaoo365-my.sharepoint.com/:i:/g/personal/acjnanual_mcm_edu_ph/EYC-f1GWN-xFo4v8cGefIFcB04UknbQIXTs7xVajPxrGbg?e=zPYnWf)
-
-![Option 1. Add Employee](https://malayancollegesmindanaoo365-my.sharepoint.com/:i:/g/personal/acjnanual_mcm_edu_ph/EZr_bAbnY6tOmvXiD66dbwgBbfj3PULKNiUilH5pbcYang?e=lTbXwo)
-
-![Option 2. View Employee](https://malayancollegesmindanaoo365-my.sharepoint.com/:i:/g/personal/acjnanual_mcm_edu_ph/EQoPyy-du3BPgvQGnxvM7HIBvydIbWj6u1CN6kp62bY1Bg?e=ANtmVU)
-
-![Option 3. Update Employee](https://malayancollegesmindanaoo365-my.sharepoint.com/:i:/g/personal/acjnanual_mcm_edu_ph/Ec1RM9nfMypDiq3RudXvFSkB7xsrN58P_7qkGqO4lYoPiQ?e=ROotds)
-
-![Option 4. Delete Employee](https://malayancollegesmindanaoo365-my.sharepoint.com/:i:/g/personal/acjnanual_mcm_edu_ph/EbQSsqBv7OtFnAMkP1akSoQB4bKEHrV1-o8r6Qc1pTiSQw?e=8P8pe0)
-
-![Option 5. View All Employees](https://malayancollegesmindanaoo365-my.sharepoint.com/:i:/g/personal/acjnanual_mcm_edu_ph/EYGf5DgVDuJFjJigjkvUtNYBpNrTu93sko5XOyujU_uqpw?e=QDgMCL)
-
-![Option 6. Exit Application](https://malayancollegesmindanaoo365-my.sharepoint.com/:i:/g/personal/acjnanual_mcm_edu_ph/EQ6A6M7cQjdNhmk4UzcxPRkBdU7gPmhNxGEISSx8HC3iWw?e=02F2u3)
 
 ## Prerequisites
 
