@@ -59,7 +59,7 @@ public class App {
                     break;
                 case 6: // Exit application
                     System.out.println("");
-                    System.out.println("Thank you for using the application. See you next time!");
+                    System.out.println("Thank you for using the application. See you next time!\n");
                     System.exit(0);
                 default:
                     System.out.println("\nPlease enter a valid service from the menu.");

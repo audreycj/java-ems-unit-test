@@ -54,7 +54,7 @@ public class Service {
 
         Employee newEmployee = new Employee(id, firstName, lastName, age, department, occupation, salary);
         employeeSet.put(newEmployee.getID(), newEmployee);
-        System.out.println("Employee added successfully.");
+        System.out.println("\nEmployee added successfully.\n");
 
     }
 
@@ -118,7 +118,7 @@ public class Service {
             queriedEmployee.setSalary(salary);
 
             // display updated details
-            System.out.print("Updated employee details: ");
+            System.out.println("\nUpdated employee details: ");
             System.out.println(queriedEmployee);
             employeeSet.put(id, queriedEmployee);
 
@@ -149,7 +149,6 @@ public class Service {
 
     // 5: View all employees
     public void viewAllEmployees() {
-
         System.out.println("===========================");
         System.out.println("ALL EMPLOYEES");
         System.out.println("===========================");
