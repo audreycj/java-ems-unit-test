@@ -48,6 +48,7 @@ replay_pid*
 
 # directories
 target
+screenshots
 
 # notes
 *.txt
