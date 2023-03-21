@@ -24,7 +24,9 @@ The system is designed to be straightforward and easy-to-use, with minimal featu
 
 ![Option 5. View All Employees](https://malayancollegesmindanaoo365-my.sharepoint.com/:i:/g/personal/acjnanual_mcm_edu_ph/EYGf5DgVDuJFjJigjkvUtNYBpNrTu93sko5XOyujU_uqpw?e=QDgMCL)
 
-![Option 6. Exit Application](https://malayancollegesmindanaoo365-my.sharepoint.com/:i:/g/personal/acjnanual_mcm_edu_ph/EQ6A6M7cQjdNhmk4UzcxPRkBdU7gPmhNxGEISSx8HC3iWw?e=02F2u3)## Prerequisites
+![Option 6. Exit Application](https://malayancollegesmindanaoo365-my.sharepoint.com/:i:/g/personal/acjnanual_mcm_edu_ph/EQ6A6M7cQjdNhmk4UzcxPRkBdU7gPmhNxGEISSx8HC3iWw?e=02F2u3)
+
+## Prerequisites
 
 To install and run the application, the following tools must be installed first:
 - [Java 17 or higher](https://www.oracle.com/java/technologies/downloads/)
